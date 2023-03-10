@@ -1,0 +1,21 @@
+<package format="3">
+  <name>btcpp_sample</name>
+  <version>0.1.0</version>
+  <description>Dummy project to check compiling</description>
+
+  <maintainer email="davide.faconti@gmail.com">Davide Faconti</maintainer>
+  <license>MIT</license>
+  <author>Davide Faconti</author>
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>behaviortree_cpp</depend>
+
+  <export>
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+  </export>
+
+</package>
